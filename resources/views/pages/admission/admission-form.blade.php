@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'ভর্তির আবেদন - BRC')
+@section('title', 'ভর্তির আবেদন - ')
 
 @section('content')
     <div class="overview-section-six py-5">
@@ -17,7 +17,7 @@
                     <div class="overview-contents">
                         <div class="item personal  flex-column">
                             <div class="row w-100">
-                                <div class="student_personal_info">১. শিক্ষার্থীর ব্যক্তিগত তথ্য</div>
+                                <div class="student_personal_info col-12">১. শিক্ষার্থীর ব্যক্তিগত তথ্য</div>
                                 <div class="col-6 input_group">
                                     <label>শিক্ষার্থীর নাম (ইংরেজি)</label><br>
                                     <input type="text" placeholder="Full Name" required>
@@ -79,7 +79,7 @@
                                     <label>শিক্ষার্থীর ই-মেইল </label><br>
                                     <input type="email" placeholder="শিক্ষার্থীর ই-মেইল" required>
                                 </div>
-                                <div class="student_personal_info">২. পিতা মাতার তথ্য</div>
+                                <div class="student_personal_info col-12">২. পিতা মাতার তথ্য</div>
 
                                 <!-- পিতার তথ্য -->
                                 <div class="col-4 input_group">
@@ -133,10 +133,10 @@
                                     <label> মাতার মোবাইল নম্বর </label><br>
                                     <input type="number" placeholder=" মাতার মোবাইল নম্বর" required>
                                 </div>
-                                <div class="student_personal_info">৩. অভিভাবকের তথ্য</div>
+                                <div class="student_personal_info col-12">৩. অভিভাবকের তথ্য</div>
 
                                 <!--  অভিভাবকের তথ্য -->
-                                <div class="input_group">
+                                <div class="input_group col-12">
                                     <label class="primary-color">বর্তমান অভিভাবক</label>
                                     <input class="guardian" type="radio" name="guardian" id="g_father">
                                     <label for="g_father"> পিতা</label>
@@ -170,7 +170,7 @@
                                     <input type="number" placeholder=" অভিভাবকের মোবাইল নম্বর" required>
                                 </div>
 
-                                <div class="student_personal_info">৪. ঠিকানা তথ্য</div>
+                                <div class="student_personal_info col-12">৪. ঠিকানা তথ্য</div>
                                 <div class="col-6 input_group">
                                     <label> বর্তমান ঠিকানা </label><br>
                                     <input type="text" placeholder="বর্তমান ঠিকানা" required>
@@ -179,7 +179,7 @@
                                     <label> স্থায়ী ঠিকানা </label><br>
                                     <input type="text" placeholder="স্থায়ী ঠিকানা" required>
                                 </div>
-                                <div class="text-right my-3">
+                                <div class="text-right my-3 col-12">
                                     <button data-show=".academic"
                                         class="btn w-btn-2 reverse_hover primary-color box-shadow-none navigation-btn"
                                         onclick="chngActiveTab('personal_tab','academic_tab')">Next</button>
@@ -366,7 +366,8 @@
                         </p>
 
                         <div class="text-center">
-                            <button class="btn w-btn-2 reverse_hover primary-color box-shadow-none navigation-btn" onclick="hideElement()">আমার কাছে আছে</button>
+                            <button class="btn w-btn-2 reverse_hover primary-color box-shadow-none navigation-btn"
+                                onclick="hideElement()">আমার কাছে আছে</button>
                         </div>
                     </div>
                 </div>

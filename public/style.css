@@ -2770,7 +2770,7 @@ ul {
     left: 0;
     width: 8px;
     height: 102%;
-    background: #d20936;
+    background: #222;
     transition: width 500ms;
     z-index: 0
 }
@@ -2798,8 +2798,8 @@ ul {
 }
 
 .react-slider-part-six .slider-content .content-part .event__video-btn--play-six {
-    right: 50%;
-    top: 93%
+    right: 40%;
+    top: 88%
 }
 
 .react-slider-part-six .slider-content .content-part .event__video-btn--play-six .event__video-btn--play-btn-six {
@@ -3058,7 +3058,7 @@ ul {
 
 .academics-section-six .view-all:hover,
 .academics-section-six .view-all:hover i {
-    color: #d20936
+    color: #222
 }
 
 .academics-section-six .academics-cards-area {
@@ -3099,7 +3099,7 @@ ul {
 }
 
 .academics-section-six .academics-card .card-title a:hover {
-    color: #d20936
+    color: #222
 }
 
 .academics-section-six .academics-card .learn-more {
@@ -3114,7 +3114,7 @@ ul {
 
 .academics-section-six .academics-card .learn-more:hover,
 .academics-section-six .academics-card .learn-more:hover i {
-    color: #d20936
+    color: #222
 }
 
 .academics-section-six .academics-card:hover .card-image img {
@@ -3137,7 +3137,7 @@ ul {
 }
 
 .academics-section-six .academics-card-2 .card-title a:hover {
-    color: #d20936
+    color: #222
 }
 
 .academics-section-six .academics-card-2 p {
@@ -3154,7 +3154,7 @@ ul {
 
 .academics-section-six .academics-card-2 .learn-more:hover,
 .academics-section-six .academics-card-2 .learn-more:hover i {
-    color: #d20936
+    color: #222
 }
 
 .academics-section-six .academics-card-2:hover .card-icon {
@@ -3252,8 +3252,8 @@ ul {
 }
 
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item .dropdown-icon:hover {
-    background: #d20936;
-    border: 2px solid #d20936
+    background: #222;
+    border: 2px solid #222
 }
 
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item .showed {
@@ -3263,7 +3263,8 @@ ul {
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item .title {
     color: #fff;
     font-size: 16px;
-    cursor: pointer
+    cursor: pointer;
+    padding-top: 0px;
 }
 
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item .hidden-content {
@@ -3281,8 +3282,8 @@ ul {
 }
 
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item.active .dropdown-icon {
-    background: #d20936;
-    border: 2px solid #d20936
+    background: #222;
+    border: 2px solid #222
 }
 
 .campus-section-six .contents .campus-dropdown .campus-dropdown-item.active .dropdown-icon i {
@@ -3341,7 +3342,7 @@ ul {
     position: absolute;
     top: 200px;
     right: 20px;
-    background: #d20936;
+    background: #222;
     color: #fff;
     font-weight: 600;
     width: 50px;
@@ -3376,7 +3377,7 @@ ul {
 
 .courses-section-six .course-card .card-title:hover a,
 .courses-section-six .course-card .card-title:hover i {
-    color: #d20936
+    color: #222
 }
 
 .courses-section-six .course-card .status {
@@ -3426,7 +3427,7 @@ ul {
 
 .courses-section-six .learn-details:hover a,
 .courses-section-six .learn-details:hover i {
-    color: #d20936
+    color: #222
 }
 
 .courses-section-six .btn-area {
@@ -3507,7 +3508,7 @@ ul {
 }
 
 .events-section-six .contents .top-content .card-title a:hover {
-    color: #d20936
+    color: #222
 }
 
 .events-section-six .contents .bottom-content {
@@ -3524,7 +3525,7 @@ ul {
     left: 0;
     width: 30px;
     height: 4px;
-    background: #d20936
+    background: #222
 }
 
 .events-section-six .contents .bottom-content .event-location,
@@ -3665,7 +3666,7 @@ ul {
 }
 
 .blog-section-six .maximized-part .blog-title a:hover {
-    color: #d20936
+    color: #222
 }
 
 .blog-section-six .maximized-part .read-more {
@@ -3680,7 +3681,7 @@ ul {
 
 .blog-section-six .maximized-part .read-more:hover,
 .blog-section-six .maximized-part .read-more:hover i {
-    color: #d20936
+    color: #222
 }
 
 .blog-section-six .minimized-part .blog-item {
@@ -3723,7 +3724,7 @@ ul {
 }
 
 .blog-section-six .minimized-part .blog-item .content .blog-title a:hover {
-    color: #d20936
+    color: #222
 }
 
 .blog-section-six .minimized-part .blog-item .content .read-more {
@@ -3913,7 +3914,7 @@ ul {
 }
 
 .testimonials-section-six .testimonials-slider-navigation i:hover {
-    color: #d20936 !important
+    color: #222 !important
 }
 
 @media (max-width:1660px) {
@@ -5167,7 +5168,7 @@ ul {
 
 .blog-section-seven .read-more:hover,
 .blog-section-seven .read-more:hover i {
-    color: #d20936
+    color: #222
 }
 
 @keyframes flip {
@@ -13726,7 +13727,7 @@ width: 19%;
     width: 100%;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 3px;
     margin-top: 50px;
 }
@@ -13774,4 +13775,11 @@ width: 19%;
 }
 .list-itemsMenu .activeList{
     background-color: #eee;
+}
+
+.btn.bg-primaryColor:hover{
+    color:var(--primary-color) !important;
+}
+.clubs img{
+    width:75% !important;
 }

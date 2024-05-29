@@ -4,7 +4,7 @@
 <head>
     <!--================= Meta tag =================-->
     <meta charset="utf-8">
-    <title>@yield('title')</title>
+    <title>@yield('title') {{$site_settings->site_short_name}}</title>
     <meta name="description" content="">
     <!--================= Responsive Tag =================-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,10 +40,10 @@
 
 <body>
     <!--================= Preloader Section Start Here =================-->
-    {{-- <div id="react__preloader">
+    <div id="react__preloader">
         <div id="react__circle_loader"></div>
         <div class="react__loader_logo"><img src="./assets/img/logo/brc-logo-curve-text.png" alt="Preload"></div>
-    </div> --}}
+    </div>
     <!--================= Preloader Section End Here =================-->
 
     @include('components.header')

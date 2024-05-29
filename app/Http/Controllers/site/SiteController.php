@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class SiteController extends Controller
 {
-    
+
     public function index()
     {
         return view('pages.index');
@@ -18,7 +18,7 @@ class SiteController extends Controller
         return view('pages.about');
     }
 
-   
+
     public function chairmanMessage()
     {
         return view('pages.chairman');
@@ -32,35 +32,16 @@ class SiteController extends Controller
         return view('pages.governing-body');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function results()
     {
-        //
+        return view('pages.results');
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function notices()
     {
-        //
+        return view('pages.notices');
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function gallery()
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return view('pages.gallery');
     }
 }

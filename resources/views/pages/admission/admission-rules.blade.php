@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'ভর্তির নির্দেশনা - BRC')
+@section('title', 'ভর্তির নির্দেশনা - ')
 
 @section('content')
 <div class="overview-section-six py-5">
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-9">
-                <object class="object-box" data="assets/notices/academic_rules.pdf" type="application/pdf" width="100%" height="800px">
+                <object class="object-box" data="assets/notices/admission.pdf" type="application/pdf" width="100%" height="800px">
                     <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>
                   </object>
             </div>

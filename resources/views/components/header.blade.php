@@ -10,7 +10,7 @@
                     <div class="menu_flex">
                         <div class="logo">
                             <a href="/" class="logo-text">
-                                <img src="assets/img/logo/logo.png" alt="logo">
+                                <img src="{{json_decode($site_settings->site_logo)->logo_wide->main_menu}}" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                                 <div class="dev">
                                     <h3 class="h3">ই-মেইল</h3>
                                     <a class="text-bold text-dark p"
-                                        href="mailto:brc.college@gmail.com">brc.college@gmail.com</a>
+                                        href="mailto:{{json_decode($site_settings->site_contact)->social->email}}">{{json_decode($site_settings->site_contact)->social->email}}</a>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <img src="./assets/img/icons/telephone.svg" alt="">
                             <div class="dev">
                                 <h3 class="h3">হটলাইন</h3>
-                                <a class="text-bold text-dark p" href="tel:+8801783639135">+৮৮০১৭৮৩৬৩৯১৩৫</a>
+                                <a class="text-bold text-dark p" href="tel:{{json_decode($site_settings->site_contact)->hotline}}">{{json_decode($site_settings->site_contact)->hotline}}</a>
                             </div>
                         </div>
                     </div>
@@ -69,11 +69,11 @@
                     <li class="active"> <a href="/">হোম</a></li>
                     <li> <a href="#">প্রশাসনিক</a>
                         <ul>
-                            <li> <a href="/about">প্রতিষ্ঠান সম্পর্কে</a></li>
+                            <li> <a href="#about">প্রতিষ্ঠান সম্পর্কে</a></li>
                             <li> <a href="/chairman-message">চেয়ারম্যান বক্তব্য</a></li>
                             <li> <a href="/principal-message">প্রিন্সিপালের বক্তব্য</a></li>
                             <li> <a href="/governing-body">গভর্নিং বডি</a></li>
-                            <li> <a href="#">এমপিও ও জাতীয়করণের তথ্য</a></li>
+                            <li> <a href="#mpo">এমপিও ও জাতীয়করণের তথ্য</a></li>
                         </ul>
                     </li>
                     <li> <a href="#">একাডেমিক</a>
@@ -84,8 +84,8 @@
                             <li> <a href="/academic-rules">একাডেমিক নিয়মাবলী</a></li>
                             <li> <a href="/academic-routine">একাডেমিক রুটিন</a></li>
                             <li> <a href="/academic-syllabus">পাঠ্যসূচি</a></li>
-                            <li> <a href="/class-based-info">শ্রেণি, শাখা এবং শিফট তথ্য</a></li>
-                            <li> <a href="/transport">যাতায়াত</a></li>
+                            <li> <a href="#class-based-info">শ্রেণি, শাখা এবং শিফট তথ্য</a></li>
+                            <li> <a href="#transport">যাতায়াত</a></li>
                         </ul>
                     </li>
         
@@ -99,19 +99,18 @@
                     </li>
                     <li> <a href="#">সহ-শিক্ষা কার্যক্রম</a>
                         <ul>
-                            <li> <a href="/events">ইভেন্ট</a></li>
-                            <li> <a href="/scouts">রোভার স্কাউট</a></li>
-                            <li> <a href="/library">লাইব্রেরি</a></li>
-                            <li> <a href="/clubs">ক্লাব</a></li>
-                            <li> <a href="/labs">ল্যাব</a></li>
-                            <li> <a href="/sports">গেমস ও স্পোর্টস</a></li>
-                            <li> <a href="/magazine">ম্যাগাজিন</a></li>
+                            <li> <a href="#events">ইভেন্ট</a></li>
+                            <li> <a href="#scouts">রোভার স্কাউট</a></li>
+                            <li> <a href="#red-crescent">রেড ক্রিসেন্ট</a></li>
+                            <li> <a href="#library">লাইব্রেরি</a></li>
+                            <li> <a href="#clubs">ক্লাব</a></li>
+                            <li> <a href="#labs">ল্যাব</a></li>
+                            <li> <a href="#magazine">ম্যাগাজিন</a></li>
                         </ul>
                     </li>
                     <li> <a href="/results">ফলাফল</a></li>
                     <li> <a href="/notices">নোটিশ</a></li>
                     <li> <a href="/gallery">গ্যালারী</a></li>
-                    <li> <a href="/contact">যোগাযোগ</a></li>
                 </ul>
             </div>
         </div>

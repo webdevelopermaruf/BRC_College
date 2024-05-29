@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Bhulta Residential College :: BRC')
+@section('title', json_decode($site_settings->site_name)->en.' :: ')
 
 @section('content')
     <!--================= Slider Section Start Here =================-->
@@ -20,13 +20,13 @@
                                 উন্নয়নের হাতিয়ার
                             </h2>
                             <div class="slider-btn">
-                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="about.html">Admissions</a>
+                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
                             </div>
                             <div class="event__video-btn--play event__video-btn--play-six">
                                 <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                     class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/images/home6/Video&#32;icon.png" alt="video-icon">
-                                    <em>Watch Intro Video</em>
+                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
+                                    <em>ভিডিও দেখুন</em>
                                 </a>
                             </div>
                         </div>
@@ -42,19 +42,18 @@
                 <div class="container">
                     <div class="slider-content">
                         <div class="content-part">
-                            <span class="slider-pretitle">Great Quality Social life</span>
+                            <span class="slider-pretitle">বৈজ্ঞানিক গবেষণা, প্রযুক্তির প্রয়োগ</span>
                             <h2 class="slider-title wow fadeInUp" data-wow-duration="2s">
-                                Discover the world of<br>
-                                possible university.
+                                একবিংশ শতাব্দীর <br> চ্যালেঞ্জ।
                             </h2>
                             <div class="slider-btn">
-                                <button class="home-six-btn"><a href="about.html">Admissions</a></button>
+                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
                             </div>
                             <div class="event__video-btn--play event__video-btn--play-six">
                                 <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                     class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/images/home6/Video&#32;icon.png" alt="video-icon">
-                                    <em>Watch Intro Video</em>
+                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
+                                    <em>ভিডিও দেখুন</em>
                                 </a>
                             </div>
                         </div>
@@ -70,19 +69,18 @@
                 <div class="container">
                     <div class="slider-content">
                         <div class="content-part">
-                            <span class="slider-pretitle">Great Quality Social life</span>
+                            <span class="slider-pretitle">শিক্ষা, প্রগতির উন্নয়ন</span>
                             <h2 class="slider-title wow fadeInUp" data-wow-duration="2s">
-                                Discover the world of<br>
-                                possible university.
+                                জাতির উন্নয়ন।
                             </h2>
                             <div class="slider-btn">
-                                <button class="home-six-btn"><a href="about.html">Admissions</a></button>
+                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
                             </div>
                             <div class="event__video-btn--play event__video-btn--play-six">
                                 <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                     class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/images/home6/Video&#32;icon.png" alt="video-icon">
-                                    <em>Watch Intro Video</em>
+                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
+                                    <em>ভিডিও দেখুন</em>
                                 </a>
                             </div>
                         </div>
@@ -98,10 +96,8 @@
                 <p class="bg-dark text-white p-3 notice_portion">নোটিশ ও বিজ্ঞপ্তি</p>
                 <marquee onmouseover="this.stop()" onmouseout="this.start()" id="marquee" scrollamount="5"
                     behaviour="scroll" direction="left">
-                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia.</a>
-                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia.</a>
-                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia.</a>
-                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia.</a>
+                    <a href=""> ভর্তি চলছে । ২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণিতে ভুলতা রেসিডেন্সিয়াল কলেজে ভর্তি চলছে । </a>
+                    <a href=""> আগামী ১৩ জুন হতে কলেজের সকল কার্যক্রম বন্ধ থাকবে এবং ০৩ জুলাই হতে পুনরায় সকল কার্যক্রম পরিচালিত হবে । </a>
                 </marquee>
             </div>
         </div>
@@ -151,25 +147,10 @@
                                     alt=""></div>
                             <div class="content">
                                 <div>
-                                    <div class="title mb-0">রেশমা সুলতানা</div>
-                                    <strong>প্রিন্সিপাল, ভুলতা রেসিডেন্সিয়াল কলেজ</strong>
+                                    <div class="title mb-0">{{json_decode($site_settings->site_administration)->principal->name}}</div>
+                                    <strong>{{json_decode($site_settings->site_administration)->principal->designation}}</strong>
                                 </div>
-                                <p class="mt-3">আধুনিক প্রযুক্তির সাথে তালমিলিয়ে একটি আর্দশ শিক্ষা প্রতিষ্ঠান
-                                    গড়ে তোলার মধ্য দিয়ে একটি দেশের সামগ্রিক উন্নতি পথ সুগম হয়। আপনারা জেনে খুশি
-                                    হবেন ঢাকা সিলেট মহাসড়কের পাশেই (ভুলতা গাউছিয়া) এলাকায় এই প্রথম পূর্ণাঙ্গ
-                                    ডিজিটালাইসড, আধুনিক শীতাতপ নিয়ন্ত্রিত শুধুমাত্র উচ্চ মাধ্যমিক বিজ্ঞান
-                                    শিক্ষার্থীদের জন্য ভুলতা রেসিডেন্সিয়াল কলেজ নামে একটি স্মার্ট শিক্ষা
-                                    প্রতিষ্ঠান প্রতিষ্ঠিত হয়েছে।
-
-                                    ভুলতা রেসিডেন্সিয়াল কলেজ কর্তৃপক্ষ নিশ্চিত করছে যে, একটি সুশৃঙ্খল, আনন্দায়ক
-                                    ও চমতকার শিক্ষা পরিবেশ সৃষ্টি করা। যা একবিংশ শতকের চ্যালেঞ্জ মোকাবেলা করার
-                                    জন্য শিক্ষার্থী নিজেকে গড়ে তুলতে সক্ষম হবে। সুশিক্ষাই পারে একজন শিক্ষার্থীকে
-                                    সত, দক্ষ দেশপ্রেমিক ও মানবিক মূল্যবোধ সম্পন্ন সুনাগরিক হিসেবে গড়ে তুলতে। এই
-                                    কলেজের শিক্ষার্থীগণ পাবে একাডেমিক পড়াশুনার পাশাপাশি ধর্মীয় নীতি নৈতিকতার
-                                    শিক্ষা।
-
-                                    সুতরাং, আমি মনে প্রাণে বিশ্বাস করি, আপনার ও আপনার সন্তানের স্বপ্নপূরণে ভুলতা
-                                    রেসিডেন্সিয়াল কলেজ উল্লেখযোগ্য ভূমিকা পালন করবে।</p>
+                                <p class="mt-3">{{str_replace("<br>", "", json_decode($site_settings->site_administration)->principal->message )}}</p>
                             </div>
                         </div>
                         <div class="item chairman hide">
@@ -180,18 +161,7 @@
                                     <h4 class="text-dark text-center pt-4 mb-1 font-bold">সোয়েব ভুঁইয়া</h4>
                                     <span class="designation_admin">চেয়ারম্যান ও প্রতিষ্ঠাতা পরিচালক</span>
                                     <p>
-                                        ভুলতা রেসিডেন্সিয়াল কলেজের স্ব অর্থায়নে প্রতিষ্ঠিত একটি রাজনৈতিক মুক্ত
-                                        শিক্ষা প্রতিষ্ঠান। এই কলেজের প্রধান লক্ষ্য হচ্ছে বিশ্বায়ন ও একবিংশ
-                                        শতাব্দীর চ্যালেঞ্জ <a href="#read-more">আরও পড়ুন...</a>
-
-
-                                        <!-- মোকাবেলার জন্য তাত্ত্বিক শিক্ষাকে বাস্তবতার সঙ্গে সমন্বয় করে পাঠদান করা এবং শিক্ষার্থীদেরকে মানব সম্পদে পরিণত করা।
-
-                                        শিক্ষক ও শিক্ষার্থীর নিবিড় সম্পর্কেই শিক্ষার্থীকে লেখাপড়ার ক্ষেত্রে উতসাহী করে তোলে। যা পরীক্ষার ভালো ফলাফলের ক্ষেত্রে সহায়ক হয়। বিজ্ঞানমনস্ক প্রযুক্তি নির্ভর আধুনিক জাতি গঠনের জন্য জীবনের প্রতিটি ক্ষেত্রে বিজ্ঞানের স্বতঃস্ফূর্ত প্রয়োগ এবং এর ব্যবহারে সক্ষম করে তোলা চেষ্টায় বন্ধ পরিপক ভুলতা রেসিডেন্সিয়াল কলেজের। আমাদের একাদশ শ্রেনির ভর্তি কার্যক্রম, পরীক্ষার ফলাফল, মাসিক বেতন, বিভিন্ন নোটিশ শিক্ষার্থী ও অভিভাবকের নিকট SMS এর মাধ্যমে প্রেরণসহ কলেজের যাবতীয় তথ্য ওয়েব সাইটের মাধ্যমে পাওয়া যাবে।
-                                        
-                                        এই কলেজে রয়েছে শীতাতপ নিয়ন্ত্রিত ক্লাসরুম, ডিজিটাল বোর্ড, বিজ্ঞান চর্চার জন্য আধুনিক ল্যাবরেটরি, প্রযুক্তিগত দক্ষতা অর্জনের জন্য রয়েছে কম্পিউটার ল্যাব, পড়ার জন্য লাইব্রেরীতে রয়েছে সময়োপযোগী পাঠ্যপুস্তক। প্রত্যেক শিক্ষার্থীদের কলেজে ব্যবহৃত সরঞ্জামাদি রাখার জন্য রয়েছে পৃথক লকারের ব্যবস্থা।
-                                        
-                                        আশাকরি সবার আন্তরিক প্রচেষ্টা ও সহযোগিতায় প্রতিষ্ঠানটি সাফল্যের শীর্ষে উন্নীত হবে। সবার জন্য শুভকামনা  -->
+                                        {{substr(str_replace("<br>", "", json_decode($site_settings->site_administration)->chairman->message ),0,400 )}} <a href="/chairman-message">আরও পড়ুন...</a>
                                     </p>
 
                                 </div>
@@ -202,21 +172,10 @@
                                         সাদি</h4>
                                     <span class="designation_admin">সভাপতি ও প্রতিষ্ঠাতা পরিচালক</span>
                                     <p>
-                                        জান ও শক্তির সম্মিলিত শিক্ষার মধ্যেই রয়েছে একটি জাতির উন্নতি। যুগোপযোগী
-                                        ও আধুনিক শিক্ষার মানদণ্ডকে সামনে রেখে ভুলতা রেসিডেন্সিয়াল কলেজ
-                                        প্রতিষ্ঠিত হয়েছে। <a href="#read-more">আরও পড়ুন...</a>
-
-                                        <!-- একবিংশ শতাব্দীর জ্ঞান বিজ্ঞানের স্রোত ধারায় সুশিক্ষিত জাতি প্রতিষ্ঠিত করা আমাদের মূল লক্ষ্য। আর সুশিক্ষায় শিক্ষিত মানবজাতি
-                                        মানবসম্পদে পরিণত হয়। এই অপ্রতিরোধ্য বিজ্ঞানের অগ্রযাত্রায় ভুলতা
-                                        রেসিডেন্সিয়াল কলেজ উল্লেখযোগ্য ভূমিকা পালন করবে। ভুলতা রেসিডেন্সিয়াল
-                                        কলেজ গতানুগতিক পাঠদানের পাশাপাশি জীবনমুখী শিক্ষা, সহশিক্ষা কার্যক্রমে
-                                        অংশগ্রহনের জন্য শিক্ষর্থীদের উতসাহিত করবে। মহান মুক্তিযুদ্ধের আলোকে ভুলতা রেসিডেন্সিয়াল কলেজের শিক্ষর্থীদের বিজ্ঞান
-                                        চর্চার পাশাপাশি, বিজ্ঞানের বিভিন্ন বিষয় নিয়ে গবেষনা করে বিশ্বের দরবারে কৃতিত্বের স্বাক্ষর রাখবে।  -->
+                                        {{substr(str_replace("<br>", "", json_decode($site_settings->site_administration)->governing_body[0]->message ),0,400 )}} <a href="/governing-body">আরও পড়ুন...</a>
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -279,7 +238,7 @@
                                     <i class="fa-solid fa-arrow-right"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 d-none">
                         <div class="minimized-part">
                             <div class="blog-item">
                                 <div class="blog-picture"><a href="blog-details.html"><img
@@ -324,37 +283,43 @@
     <div class="campus-section-six">
         <div class="row">
             <div class="col-xl-6 col-lg-12 p---0">
-                <div class="campus-picture"><img src="assets/images/home6/campus/students-walking.jpg"
+                <div class="campus-picture"><img style="background-attachment: fixed" src="assets/img/events/college_life.jpg"
                         alt="campus-picture"></div>
             </div>
             <div class="col-xl-6 p---0">
                 <div class="contents">
-                    <h1 class="campus-title">Campus Life</h1>
-                    <p>Building a strong sense of community in Greenville school is both important and doable.
-                        Our school uses different community.</p>
+                    <h1 class="campus-title">প্রতিষ্ঠানের সুযোগ-সুবিধা</h1>
+                    <p>এই কলেজে রয়েছে শীতাতপ নিয়ন্ত্রিত ক্লাসরুম, ডিজিটাল বোর্ড, বিজ্ঞান চর্চার জন্য আধুনিক ল্যাবরেটরি, প্রযুক্তিগত দক্ষতা অর্জনের জন্য রয়েছে কম্পিউটার ল্যাব, পড়ার জন্য লাইব্রেরীতে রয়েছে সময়োপযোগী পাঠ্যপুস্তক। প্রত্যেক শিক্ষার্থীদের কলেজে ব্যবহৃত সরঞ্জামাদি রাখার জন্য রয়েছে পৃথক লকারের ব্যবস্থা। </p>
                     <div class="campus-dropdown">
                         <div class="campus-dropdown-item">
                             <div class="showed d-flex align-items-center">
                                 <div class="dropdown-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                <div class="title">EXPLORE UNIVERSITY COURSES</div>
+                                <div class="title">শীতাতপ নিয়ন্ত্রিত ক্লাসরুম</div>
                             </div>
                             <div class="hidden-content">
-                                <p>Maecenas quisque similique laborum quisquam eaque incidi dunt repellat
-                                    proident nisl assumenda.</p>
+                                <p>এই কলেজে প্রতিটি ক্লাসরুম শীতাতপ নিয়ন্ত্রিত । </p>
                             </div>
                         </div>
                         <div class="campus-dropdown-item">
                             <div class="showed d-flex align-items-center">
                                 <div class="dropdown-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                <div class="title">UNIVERSITY COMMUNITY</div>
+                                <div class="title">ডিজিটাল বোর্ড</div>
                             </div>
                             <div class="hidden-content">
-                                <p>Maecenas quisque similique laborum quisquam eaque incidi dunt repellat
-                                    proident nisl assumenda.</p>
+                                <p>ক্লাসরুমে রয়েছে ডিজিটাল বোর্ড যাতে প্রয়োজনীয় এ্যানিমেশন এর মাধ্যমে শিক্ষার্থীরা পাঠ ভালো করে বুঝতে পারে।</p>
+                            </div>
+                        </div>
+                        <div class="campus-dropdown-item">
+                            <div class="showed d-flex align-items-center">
+                                <div class="dropdown-icon"><i class="fa-solid fa-angle-right"></i></div>
+                                <div class="title">শিক্ষার্থীদের পৃথক লকারের ব্যবস্থা</div>
+                            </div>
+                            <div class="hidden-content">
+                                <p>ছেলে-মেয়ে আলাদা আলাদা শ্রেণী কক্ষের পাশাপাশি রয়েছে পার্সোনাল জিনিস রাখার জন্য রয়েছে লকারের ব্যবস্থা।</p>
                             </div>
                         </div>
                     </div>
-                    <button class="home-six-btn mt---30"><a href="signup.html">Apply Now</a></button>
+                    <button class="home-six-btn mt---30"><a href="/admission-apply">এখনই ভর্তির আবেদন করুন</a></button>
                 </div>
             </div>
         </div>
@@ -368,46 +333,46 @@
             </div>
         </div>
         <ul class="btn-gallery">
-            <div class="owl-carousel gallery-Slider-6">
+            <div class="owl-carousel gallery-Slider-6 clubs">
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/1.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/bncc.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/2.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/quran_club.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/3.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/rover_scout.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/4.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/science_club.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/5.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/red_crescent.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
                 <div class="item">
                     <li>
                         <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/images/home6/gallary/6.png" alt="gallary-image" />
+                            <img src="assets/img/clubs/computer_club.jpg" alt="gallary-image" />
                         </a>
                     </li>
                 </div>
@@ -428,43 +393,43 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/3.png"
+                        <div class="event-card-picture"><img src="assets/img/events/1.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/1.png"
+                        <div class="event-card-picture"><img src="assets/img/events/2.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/2.png"
+                        <div class="event-card-picture"><img src="assets/img/events/3.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/1.png"
+                        <div class="event-card-picture"><img src="assets/img/events/4.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/3.png"
+                        <div class="event-card-picture"><img src="assets/img/events/5.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/images/home6/events/2.png"
+                        <div class="event-card-picture"><img src="assets/img/events/6.jpg"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
 
             </div>
-            <p class="text-center"><a href="" class="btn w-btn-2 primary-color">সকল ফটো দেখুন</a></p>
+            <p class="text-center"><a href="/gallery" class="btn w-btn-2 primary-color">সকল ফটো দেখুন</a></p>
         </div>
     </div>
     <!--================= Events Section End Here =================-->

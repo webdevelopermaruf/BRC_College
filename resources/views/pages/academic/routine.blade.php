@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'একাডেমিক রুটিন - BRC')
+@section('title', 'একাডেমিক রুটিন - ')
 
 @section('content')
 <div class="overview-section-six py-5">
