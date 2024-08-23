@@ -368,6 +368,9 @@
 	.popular__course__area .course__item .course__card-icon .react__user{
 		font-size: 16px;
 	}
+	button.w-sm-100.navigation-btn{
+		width:70%;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -649,6 +652,9 @@
 	}
 	.beforerules {
 		width: 100% !important;
+	}
+	.admission_btn button.navigation-btn{
+		width:50%;
 	}
 }
 

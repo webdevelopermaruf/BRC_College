@@ -5,9 +5,7 @@
 <!--================= Bootstrap js =================-->
 <script src="assets/js/bootstrap.min.js"></script>
 <!--================= Owl Carousel js =================-->
-<script src="assets/js/owl.carousel.min.js"></script>
-<!--================= Swiper Slider js =================-->
-<script src="assets/js/swiper-bundle.min.js"></script>
+{{-- <script src="assets/js/owl.carousel.min.js"></script> --}}
 <!--================= Magnific Popup =================-->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <!--================= Counter up js =================-->

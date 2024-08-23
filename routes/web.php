@@ -32,6 +32,7 @@ Route::get('/class-based-info', [AcademicController::class, 'class_based_info'])
 Route::get('/admission-rules', [AdmissionController::class, 'admissionRules']);
 Route::get('/prospectus', [AdmissionController::class, 'prospectus']);
 Route::get('/admission-apply', [AdmissionController::class, 'applyform']);
+Route::post('/admission-apply', [AdmissionController::class, 'applyAdmission']);
 Route::get('/admission-login', [AdmissionController::class, 'admissionStatus']);
 
 

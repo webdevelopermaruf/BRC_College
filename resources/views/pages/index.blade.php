@@ -4,90 +4,100 @@
 @section('content')
     <!--================= Slider Section Start Here =================-->
     <div class="react-slider-part react-slider-part-six">
-        <div class="home-sliders home2 owl-carousel">
-            <div class="single-slide">
-                <div class="slider-img">
-                    <img class="desktop" src="assets/img/slider/slider1.webp" alt="Slider Image 1">
-                    <img class="mobile" src="assets/img/slider/slider1m.webp" alt="Slider Image 1">
-                    <div id="overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slider-content">
-                        <div class="content-part">
-                            <span class="slider-pretitle">বৈজ্ঞানিক চিন্তাচেতনা ও যুক্তিবাদী মন</span>
-                            <h2 class="slider-title">
-                                মানব সম্পদ <br />
-                                উন্নয়নের হাতিয়ার
-                            </h2>
-                            <div class="slider-btn">
-                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+        <div id="carouselExampleControls" class="carousel slide home-sliders home2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active single-slide">
+                    <div class="slider-img">
+                        <img class="desktop" src="assets/img/slider/slider1.webp" loading="eager" alt="Slider Image 1">
+                        <img class="mobile" src="assets/img/slider/slider1m.webp" loading="lazy" alt="Slider Image 1">
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">বৈজ্ঞানিক চিন্তাচেতনা ও যুক্তিবাদী মন</span>
+                                <h2 class="slider-title">
+                                    মানব সম্পদ <br />
+                                    উন্নয়নের হাতিয়ার
+                                </h2>
+                                <div class="slider-btn">
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                </div>
+                                <div class="event__video-btn--play event__video-btn--play-six">
+                                    <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
+                                        class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
+                                        <img class="video-icon" loading="lazy" src="assets/img/icons/video-icon.png" alt="video-icon">
+                                        <em>ভিডিও দেখুন</em>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="event__video-btn--play event__video-btn--play-six">
-                                <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
-                                    class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
-                                    <em>ভিডিও দেখুন</em>
-                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item single-slide">
+                    <div class="slider-img">
+                        <img class="desktop" src="assets/img/slider/slider2.webp" loading="lazy" alt="Slider Image 1">
+                        <img class="mobile" src="assets/img/slider/slider2m.webp" loading="lazy" alt="Slider Image 1">
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">বৈজ্ঞানিক গবেষণা, প্রযুক্তির প্রয়োগ</span>
+                                <h2 class="slider-title">
+                                    একবিংশ শতাব্দীর <br> চ্যালেঞ্জ।
+                                </h2>
+                                <div class="slider-btn">
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                </div>
+                                <div class="event__video-btn--play event__video-btn--play-six">
+                                    <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
+                                        class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
+                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy" alt="video-icon">
+                                        <em>ভিডিও দেখুন</em>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item single-slide">
+                    <div class="slider-img">
+                        <img class="desktop" src="assets/img/slider/slider3.webp" loading="lazy" alt="Slider Image 1">
+                        <img class="mobile" src="assets/img/slider/slider3m.webp" loading="lazy" alt="Slider Image 1">
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">শিক্ষা, প্রগতির উন্নয়ন</span>
+                                <h2 class="slider-title">
+                                    জাতির উন্নয়ন।
+                                </h2>
+                                <div class="slider-btn">
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                </div>
+                                <div class="event__video-btn--play event__video-btn--play-six">
+                                    <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
+                                        class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
+                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy" alt="video-icon">
+                                        <em>ভিডিও দেখুন</em>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-slide">
-                <div class="slider-img">
-                    <img class="desktop" src="assets/img/slider/slider2.webp" alt="Slider Image 1">
-                    <img class="mobile" src="assets/img/slider/slider2m.webp" alt="Slider Image 1">
-                    <div id="overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slider-content">
-                        <div class="content-part">
-                            <span class="slider-pretitle">বৈজ্ঞানিক গবেষণা, প্রযুক্তির প্রয়োগ</span>
-                            <h2 class="slider-title wow fadeInUp" data-wow-duration="2s">
-                                একবিংশ শতাব্দীর <br> চ্যালেঞ্জ।
-                            </h2>
-                            <div class="slider-btn">
-                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
-                            </div>
-                            <div class="event__video-btn--play event__video-btn--play-six">
-                                <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
-                                    class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
-                                    <em>ভিডিও দেখুন</em>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="slider-img">
-                    <img class="desktop" src="assets/img/slider/slider3.webp" alt="Slider Image 1">
-                    <img class="mobile" src="assets/img/slider/slider3m.webp" alt="Slider Image 1">
-                    <div id="overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slider-content">
-                        <div class="content-part">
-                            <span class="slider-pretitle">শিক্ষা, প্রগতির উন্নয়ন</span>
-                            <h2 class="slider-title wow fadeInUp" data-wow-duration="2s">
-                                জাতির উন্নয়ন।
-                            </h2>
-                            <div class="slider-btn">
-                                <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
-                            </div>
-                            <div class="event__video-btn--play event__video-btn--play-six">
-                                <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
-                                    class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                    <img class="video-icon" src="assets/img/icons/video-icon.png" alt="video-icon">
-                                    <em>ভিডিও দেখুন</em>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
     </div>
     <!--================= Slider Section End Here =================-->
     <div class="topbar-area style1">
@@ -143,7 +153,7 @@
                             </div>
                         </div>
                         <div class="item principle mb-3">
-                            <div class="content-picture"><img src="assets/img/administration/principle.jpg"
+                            <div class="content-picture"><img src="assets/img/administration/principle.webp" loading="lazy"
                                     alt=""></div>
                             <div class="content">
                                 <div>
@@ -156,7 +166,7 @@
                         <div class="item chairman hide">
                             <div class="row">
                                 <div class="col-6 main_div">
-                                    <div class="governing_img"><img src="assets/img/administration/shoeb.jpg"
+                                    <div class="governing_img"><img src="assets/img/administration/shoeb.webp" loading="lazy"
                                             alt=""></div>
                                     <h4 class="text-dark text-center pt-4 mb-1 font-bold">সোয়েব ভুঁইয়া</h4>
                                     <span class="designation_admin">চেয়ারম্যান ও প্রতিষ্ঠাতা পরিচালক</span>
@@ -166,7 +176,7 @@
 
                                 </div>
                                 <div class="col-6 main_div">
-                                    <div class="governing_img"><img src="assets/img/administration/sadi.jpg"
+                                    <div class="governing_img"><img src="assets/img/administration/sadi.webp" loading="lazy"
                                             alt=""></div>
                                     <h4 class="text-dark text-center pt-4 mb-1 font-bold">মোঃ সাইদুল ইসলাম
                                         সাদি</h4>
@@ -183,7 +193,7 @@
                     <iframe
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61555703712481&tabs=timeline%2Cevents%2Cmessages&width=500&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
                         width="500" height="500" style="border:none;overflow:hidden" scrolling="no"
-                        frameborder="0" allowfullscreen="true"
+                        frameborder="0" allowfullscreen="true" loading="lazy"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
@@ -229,8 +239,8 @@
                             <h3>পরবর্তী ইভেন্ট</h3>
                         </div>
                         <div class="maximized-part">
-                            <div class="blog-picture"><a href="blog-details.html"><img
-                                        src="./assets/img/events/gpa-5.00.jpg" alt="blog-picture"></a></div>
+                            <div class="blog-picture"><a href="blog-details.html"><img loading="lazy"
+                                        src="./assets/img/events/gpa-5.00.webp" alt="blog-picture"></a></div>
                             <div class="blog-date">30 May, 2024</div>
                             <div class="blog-title"><a href="blog-details.html">জিপিএ ৫.০০ প্রাপ্ত শিক্ষার্থীদের
                                     সংবর্ধনা অনুষ্ঠান</a></div>
@@ -241,28 +251,28 @@
                     <div class="col-xl-4 d-none">
                         <div class="minimized-part">
                             <div class="blog-item">
-                                <div class="blog-picture"><a href="blog-details.html"><img
-                                            src="assets/images/home6/blog/min1.png" alt="blog-picture"></a>
+                                <div class="blog-picture"><a href="/blog-details"><img loading="lazy"
+                                            src="assets/img/events/3.webp" alt="blog-picture"></a>
                                 </div>
                                 <div class="content">
                                     <div class="blog-date">10 February, 2022</div>
-                                    <div class="blog-title"><a href="blog-details.html">Course Description from
+                                    <div class="blog-title"><a href="/blog-details">Course Description from
                                             the Academic Calendar.</a></div>
                                 </div>
                             </div>
                             <div class="blog-item">
-                                <div class="blog-picture"><a href="blog-details.html"><img
-                                            src="assets/images/home6/blog/min2.png" alt="blog-picture"></a>
+                                <div class="blog-picture"><a href="/blog-details"><img loading="lazy"
+                                            src="assets/img/events/3.webp" alt="blog-picture"></a>
                                 </div>
                                 <div class="content">
                                     <div class="blog-date">10 February, 2022</div>
-                                    <div class="blog-title"><a href="blog-details.html">A course outline or
+                                    <div class="blog-title"><a href="/blog-details">A course outline or
                                             syllabus also works as a guide.</a></div>
                                 </div>
                             </div>
                             <div class="blog-item">
-                                <div class="blog-picture"><a href="blog-details.html"><img
-                                            src="assets/images/home6/blog/min3.png" alt="blog-picture"></a>
+                                <div class="blog-picture"><a href="/blog-details"><img loading="lazy"
+                                            src="assets/img/events/3.webp" alt="blog-picture"></a>
                                 </div>
                                 <div class="content">
                                     <div class="blog-date">10 February, 2022</div>
@@ -282,12 +292,12 @@
     <!--================= Campus Section Start Here =================-->
     <div class="campus-section-six">
         <div class="row">
-            <div class="col-xl-6 col-lg-12 p---0">
-                <div class="campus-picture"><img style="background-attachment: fixed" src="assets/img/events/college_life.jpg"
+            <div class="col-xl-6 col-lg-12 p-0">
+                <div class="campus-picture"><img style="background-attachment: fixed" src="assets/img/events/college_life.webp" loading="lazy"
                         alt="campus-picture"></div>
             </div>
-            <div class="col-xl-6 p---0">
-                <div class="contents">
+            <div class="col-xl-6 p-0">
+                <div class="contents p-5">
                     <h1 class="campus-title">প্রতিষ্ঠানের সুযোগ-সুবিধা</h1>
                     <p>এই কলেজে রয়েছে শীতাতপ নিয়ন্ত্রিত ক্লাসরুম, ডিজিটাল বোর্ড, বিজ্ঞান চর্চার জন্য আধুনিক ল্যাবরেটরি, প্রযুক্তিগত দক্ষতা অর্জনের জন্য রয়েছে কম্পিউটার ল্যাব, পড়ার জন্য লাইব্রেরীতে রয়েছে সময়োপযোগী পাঠ্যপুস্তক। প্রত্যেক শিক্ষার্থীদের কলেজে ব্যবহৃত সরঞ্জামাদি রাখার জন্য রয়েছে পৃথক লকারের ব্যবস্থা। </p>
                     <div class="campus-dropdown">
@@ -332,55 +342,15 @@
             <div class="section-title mb-5 text-center primary-color">কো-কারিকুলাম কার্যক্রম
             </div>
         </div>
-        <ul class="btn-gallery">
-            <div class="owl-carousel gallery-Slider-6 clubs">
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/bncc.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/quran_club.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/rover_scout.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/science_club.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/red_crescent.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <a href="index-six.html#gallery-1" class="btn-gallery">
-                            <img src="assets/img/clubs/computer_club.jpg" alt="gallary-image" />
-                        </a>
-                    </li>
-                </div>
-
-            </div>
-        </ul>
-
-
+        <div class="row align-items-center">
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/bncc.webp" alt="gallary-image" loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/quran_club.webp" alt="gallary-image" loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/rover_scout.webp" alt="gallary-image" loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/science_club.webp" alt="gallary-image" loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/red_crescent.webp" alt="gallary-image" loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/computer_club.webp" alt="gallary-image" loading="lazy" />   
+        </div>
+       
     </div>
     <!--================= Gallary Section End Here ================= -->
     <!--================= Events Section Start Here =================-->
@@ -393,37 +363,37 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/1.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/1.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/2.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/2.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/3.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/3.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/4.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/4.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/5.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/5.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="event-card">
-                        <div class="event-card-picture"><img src="assets/img/events/6.jpg"
+                        <div class="event-card-picture"><img src="assets/img/events/6.webp" loading="lazy"
                                 alt="event-card-image"></div>
                     </div>
                 </div>
