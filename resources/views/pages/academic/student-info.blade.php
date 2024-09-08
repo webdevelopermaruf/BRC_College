@@ -10,8 +10,8 @@
                         <div class="second_col">
                             <label class="label">শ্রেণিঃ</label><br>
                             <select class="select_input" required>
-                                <option value="">একাদশ</option>
-                                <option value="">দ্বাদশ</option>
+                                <option value="11">একাদশ</option>
+                                <option value="12">দ্বাদশ</option>
                             </select>
                         </div>
                     </div>
@@ -19,8 +19,8 @@
                         <div class="second_col">
                             <label class="label">শিফটঃ</label><br>
                             <select class="select_input" required>
-                                <option value="">সকাল শিফট</option>
-                                <option value="">বিকাল শিফট</option>
+                                <option value="1">সকাল শিফট</option>
+                                <option value="2">বিকাল শিফট</option>
                             </select>
                         </div>
                     </div>
@@ -28,9 +28,9 @@
                         <div class="second_col">
                             <label class="label">গ্রুপঃ</label><br>
                             <select class="select_input" required>
-                                <option value="">বিজ্ঞান</option>
-                                <option value="">মানবিক</option>
-                                <option value="">ব্যবসায় শিক্ষা</option>
+                                <option value="1">বিজ্ঞান</option>
+                                <option value="2">মানবিক</option>
+                                <option value="3">ব্যবসায় শিক্ষা</option>
                             </select>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
             <div class="student_head">
                 <h2 class="heading" style="font-weight: 700;">শিক্ষার্থীদের তথ্য</h2>
                 <hr />
-                <h4 class="all_students">প্রাপ্ত শিক্ষার্থীর সংখ্যা : ১৫০ </h4>
+                <h4 class="all_students">প্রাপ্ত শিক্ষার্থীর সংখ্যা :  </h4>
             </div>
             <div class="mb-5">
                 <table style="table-layout: fixed;font-size: 17px;" class="table table-bordered">
@@ -87,30 +87,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>TANZIA TABASSUM ANI</td>
-                            <td>004833</td>
-                            <td>Ten</td>
-                            <td>Section C</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>TABASSUM JANNAT FARIHA</td>
-                            <td>004834</td>
-                            <td>Ten</td>
-                            <td>Section C</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Md Maruf</td>
-                            <td>004835</td>
-                            <td>Ten</td>
-                            <td>Section C</td>
-                            <td>3</td>
-                        </tr>
+                       
                     </tbody>
                 </table>
             </div>

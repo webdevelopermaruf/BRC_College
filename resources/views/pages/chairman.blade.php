@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-8">
                     <div class="text-center">
-                        <img width="350x" src="assets/img/administration/shoeb.jpg" alt="">
+                        <img width="350x" src="/assets/img/administration/shoeb.webp" alt="">
                     </div>
                     <div class="my-3" style="font-size: 17px">
                        {!! json_decode($site_settings->site_administration)->chairman->message !!}

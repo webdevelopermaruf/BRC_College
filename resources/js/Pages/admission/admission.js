@@ -14,7 +14,7 @@ export function setPresentData(value) {
         name_bn = form.personal.mother_name_bn;
         nid_number = form.personal.mother_nid_number;
         profession = form.personal.mother_profession;
-        relation = "Father";
+        relation = "Mother";
         mobile = form.personal.mother_mobile;
     } else {
         name_en = '';

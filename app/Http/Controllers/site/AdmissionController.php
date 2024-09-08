@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\site;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\AdmissionStarted;
+use App\Mail\AdmissionInfoMail;
 use App\Models\Applicant;
+use Buglinjo\LaravelWebp\Webp;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Mail;
+
 
 class AdmissionController extends Controller
 {
@@ -25,36 +30,44 @@ class AdmissionController extends Controller
 
     public function applyform()
     {
-        // return view('pages.admission.admission-form');
         return Inertia::render('admission/AdmissionForm');
     }
     public function applyAdmission(Request $req)
     {
         $personal = json_decode($req->personal);  
         $id = uniqid(date('y'));
+        
+        $path = storage_path("app/public/applicant/$id/");
+        File::makeDirectory($path, 0777, true, true);
 
-        Storage::put("applicant/$id/photo",$req->file('student_photo'));
-
+        Webp::make($req->file('student_photo'))->save(storage_path("app/public/applicant/$id/photo.webp"));
+        Webp::make($req->file('father_nid'))->save(storage_path("app/public/applicant/$id/father_nid.webp"));
+        Webp::make($req->file('mother_nid'))->save(storage_path("app/public/applicant/$id/mother_nid.webp"));
+        Webp::make($req->file('testimonial'))->save(storage_path("app/public/applicant/$id/testimonial.webp"));
+        Webp::make($req->file('transcript'))->save(storage_path("app/public/applicant/$id/transcript.webp"));
+        Webp::make($req->file('admit_card'))->save(storage_path("app/public/applicant/$id/admit_card.webp"));
+        
+        $pwd = str()->random(8);
         $apply = Applicant::insert([
             "student_personal" => $req->personal,
             "student_academic" => $req->academic,
             "student_files" => json_encode([
-                'student_photo' => $req->file('student_photo'),
-                'father_nid' => $req->file('father_nid'),
-                'mother_nid' => $req->file('mother_nid'),
-                'testimonial' => $req->file('testimonial'),
-                'admit_card' => $req->file('admit_card'),
-                'transcript' => $req->file('transcript'),
+                'student_photo' => "/applicant/$id/photo.webp",
+                'father_nid' => "/applicant/$id/father_nid.webp",
+                'mother_nid' => "/applicant/$id/mother_nid.webp",
+                'testimonial' => "/applicant/$id/testimonial.webp",
+                'transcript' => "/applicant/$id/transcript.webp",
+                'admit_card' => "/applicant/$id/admit_card.webp",
             ]),
             "applicant_no" => $id,
             "applicant_phone" => $personal->student_mobile,
             "applicant_email" => $personal->student_email,
-            "applicant_password" => str()->random(8),
+            "applicant_password" => $pwd,
             "applicant_status" => 0, // pending
         ]);
 
-
         if($apply){
+            AdmissionStarted::dispatch($id, $personal->student_email, $personal->student_mobile, $pwd);
             return response()->json(['status'=> 200, 'data'=> 'success']);
         }else{
             return response()->json(['status'=> 400, 'data'=> 'failed']);
@@ -64,31 +77,36 @@ class AdmissionController extends Controller
 
     public function admissionStatus()
     {
+        if (session()->get('user')) return Inertia::location('/applicant/');
         return Inertia::render('admission/AdmissionLogin');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function admissionLogin(Request $req)
     {
-        //
+        $applicant = Applicant::where('applicant_no', $req->id)->where('applicant_password', $req->password)->first();
+        if($applicant){
+            session()->put('user', "applicant");
+            session()->put('info', $applicant);
+            return Inertia::location('/applicant/');
+        }else{
+           return session()->flash('message', 400);
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function applicant()
     {
-        //
+        return view('pages.applicant.applicant', ['user'=> session()->get('info')]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+ 
+    public function applicantLogout()
     {
-        //
+        session()->forget('user');
+        session()->forget('info');
+        return Inertia::location('/admission-login');
     }
 
     /**

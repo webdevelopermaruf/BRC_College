@@ -11,49 +11,49 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/1.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/1.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/2.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/2.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/3.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/3.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/4.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/4.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/5.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/5.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/6.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/6.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/7.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/7.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="event-card">
-                    <div class="event-card-picture"><img src="assets/img/events/8.jpg"
+                    <div class="event-card-picture"><img src="assets/img/events/8.webp"
                             alt="event-card-image"></div>
                 </div>
             </div>

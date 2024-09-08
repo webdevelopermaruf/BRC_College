@@ -34,8 +34,10 @@ Route::get('/prospectus', [AdmissionController::class, 'prospectus']);
 Route::get('/admission-apply', [AdmissionController::class, 'applyform']);
 Route::post('/admission-apply', [AdmissionController::class, 'applyAdmission']);
 Route::get('/admission-login', [AdmissionController::class, 'admissionStatus']);
+Route::post('/admission-login', [AdmissionController::class, 'admissionLogin']);
 
-
+Route::get('/applicant', [AdmissionController::class, 'applicant']);
+Route::get('/applicant/logout', [AdmissionController::class, 'applicantLogout']);
 
 //other routes
 Route::get('/results', [SiteController::class, 'results']);
@@ -49,6 +51,11 @@ Route::get('/app/clear', function(){
     Artisan::call('config:clear');
     Artisan::call('cache:clear');
     return "App Cleared";
+});
+
+Route::get('/run/worker', function(){
+    Artisan::call('queue:work');
+    return "Worker Started";
 });
 
 Route::get('/app/optimize', function(){

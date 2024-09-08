@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="instructors___page pb---140">
-    <div class="container">                        
+    <div class="container mb-5">                        
         <h2 class="my-5 text-center">
             শিক্ষকমন্ডলী এবং স্টাফ
         </h2>

@@ -14,7 +14,7 @@ html {
     font-family: "Baloo Da 2", sans-serif;
     vertical-align: baseline;
     font-weight: 400;
-    overflow-x: hidden;
+    overflow-x:hidden;
     line-height: 1.7
 }
 
@@ -13674,6 +13674,11 @@ body.event-page .react-upcoming__event .event__card .event_time {
 }
 .admission_btn button.navigation-btn{
 width: 19%;
+border-bottom: 1px solid var(--primary-color);
+margin:1px;
+}
+.dev{
+    margin-left:15px;
 }
 
 .student_personal_info {
@@ -13735,4 +13740,12 @@ width: 19%;
 }
 .clubs img{
     width:75% !important;
+}
+.nav-pills button{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+}
+.table td{
+    font-size: 18px;
 }

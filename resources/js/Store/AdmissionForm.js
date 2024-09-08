@@ -74,13 +74,15 @@ export const form = reactive({
 })
 
 export function apply(data) {
+    document.querySelector("#loadingArea").classList.toggle("loading");
+
     let content = new FormData();
     content.append('student_photo', data.upload.student[0]);
     content.append('father_nid', data.upload.student[1]);
     content.append('mother_nid', data.upload.student[2]);
-    content.append('testimonial', data.upload.student[4]);
-    content.append('transcript', data.upload.student[5]);
-    content.append('admit_card', data.upload.student[6]);
+    content.append('testimonial', data.upload.student[3]);
+    content.append('transcript', data.upload.student[4]);
+    content.append('admit_card', data.upload.student[5]);
 
     content.append('personal', JSON.stringify(data.personal));
     content.append('academic', JSON.stringify(data.academic));
@@ -90,7 +92,11 @@ export function apply(data) {
             'Content-Type': 'multipart/form-data'
         }
     }).then(res => {
-        console.log(res.data);
+        if(res.data.status == 200){
+            document.querySelector("#loadingArea").classList.toggle("loading");
+            alert("Your Application has been successfully");
+            window.location.href = "/admission-login?check=true";
+        }
     }).catch(err => {
         console.log(err)
     })
