@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', json_decode($site_settings->site_name)->en.' :: ')
+@section('title', json_decode($site_settings->site_name)->en . ' :: ')
 
 @section('content')
     <!--================= Slider Section Start Here =================-->
@@ -21,12 +21,14 @@
                                     উন্নয়নের হাতিয়ার
                                 </h2>
                                 <div class="slider-btn">
-                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি
+                                        আবেদন</a>
                                 </div>
                                 <div class="event__video-btn--play event__video-btn--play-six">
                                     <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                         class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                        <img class="video-icon" loading="lazy" src="assets/img/icons/video-icon.png" alt="video-icon">
+                                        <img class="video-icon" loading="lazy" src="assets/img/icons/video-icon.png"
+                                            alt="video-icon">
                                         <em>ভিডিও দেখুন</em>
                                     </a>
                                 </div>
@@ -36,7 +38,7 @@
                 </div>
                 <div class="carousel-item single-slide">
                     <div class="slider-img">
-                        <img class="desktop" src="assets/img/slider/slider2.webp" loading="lazy" alt="Slider Image 1">
+                        <img class="desktop" src="assets/img/slider/slider2.webp" alt="Slider Image 1">
                         <img class="mobile" src="assets/img/slider/slider2m.webp" loading="lazy" alt="Slider Image 1">
                         <div id="overlay"></div>
                     </div>
@@ -48,12 +50,14 @@
                                     একবিংশ শতাব্দীর <br> চ্যালেঞ্জ।
                                 </h2>
                                 <div class="slider-btn">
-                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি
+                                        আবেদন</a>
                                 </div>
                                 <div class="event__video-btn--play event__video-btn--play-six">
                                     <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                         class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy" alt="video-icon">
+                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy"
+                                            alt="video-icon">
                                         <em>ভিডিও দেখুন</em>
                                     </a>
                                 </div>
@@ -63,7 +67,7 @@
                 </div>
                 <div class="carousel-item single-slide">
                     <div class="slider-img">
-                        <img class="desktop" src="assets/img/slider/slider3.webp" loading="lazy" alt="Slider Image 1">
+                        <img class="desktop" src="assets/img/slider/slider3.webp" alt="Slider Image 1">
                         <img class="mobile" src="assets/img/slider/slider3m.webp" loading="lazy" alt="Slider Image 1">
                         <div id="overlay"></div>
                     </div>
@@ -75,12 +79,14 @@
                                     জাতির উন্নয়ন।
                                 </h2>
                                 <div class="slider-btn">
-                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি আবেদন</a>
+                                    <a class="btn bg-primaryColor px-4 py-3 text-white" href="/admission-apply">ভর্তি
+                                        আবেদন</a>
                                 </div>
                                 <div class="event__video-btn--play event__video-btn--play-six">
                                     <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c"
                                         class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
-                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy" alt="video-icon">
+                                        <img class="video-icon" src="assets/img/icons/video-icon.png" loading="lazy"
+                                            alt="video-icon">
                                         <em>ভিডিও দেখুন</em>
                                     </a>
                                 </div>
@@ -89,15 +95,17 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-          </div>
+            </button>
+        </div>
     </div>
     <!--================= Slider Section End Here =================-->
     <div class="topbar-area style1">
@@ -106,8 +114,10 @@
                 <p class="bg-dark text-white p-3 notice_portion">নোটিশ ও বিজ্ঞপ্তি</p>
                 <marquee onmouseover="this.stop()" onmouseout="this.start()" id="marquee" scrollamount="5"
                     behaviour="scroll" direction="left">
-                    <a href=""> ভর্তি চলছে । ২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণিতে ভুলতা রেসিডেন্সিয়াল কলেজে ভর্তি চলছে । </a>
-                    <a href=""> আগামী ১৩ জুন হতে কলেজের সকল কার্যক্রম বন্ধ থাকবে এবং ০৩ জুলাই হতে পুনরায় সকল কার্যক্রম পরিচালিত হবে । </a>
+                    <a href=""> ভর্তি চলছে । ২০২৩-২৪ শিক্ষাবর্ষে একাদশ শ্রেণিতে ভুলতা রেসিডেন্সিয়াল কলেজে ভর্তি চলছে
+                        । </a>
+                    <a href=""> আগামী ১৩ জুন হতে কলেজের সকল কার্যক্রম বন্ধ থাকবে এবং ০৩ জুলাই হতে পুনরায় সকল
+                        কার্যক্রম পরিচালিত হবে । </a>
                 </marquee>
             </div>
         </div>
@@ -153,36 +163,41 @@
                             </div>
                         </div>
                         <div class="item principle mb-3">
-                            <div class="content-picture"><img src="assets/img/administration/principle.webp" loading="lazy"
-                                    alt=""></div>
+                            <div class="content-picture"><img src="assets/img/administration/principle.webp"
+                                    loading="lazy" alt=""></div>
                             <div class="content">
                                 <div>
-                                    <div class="title mb-0">{{json_decode($site_settings->site_administration)->principal->name}}</div>
-                                    <strong>{{json_decode($site_settings->site_administration)->principal->designation}}</strong>
+                                    <div class="title mb-0">
+                                        {{ json_decode($site_settings->site_administration)->principal->name }}</div>
+                                    <strong>{{ json_decode($site_settings->site_administration)->principal->designation }}</strong>
                                 </div>
-                                <p class="mt-3">{{str_replace("<br>", "", json_decode($site_settings->site_administration)->principal->message )}}</p>
+                                <p class="mt-3">
+                                    {{ str_replace('<br>', '', json_decode($site_settings->site_administration)->principal->message) }}
+                                </p>
                             </div>
                         </div>
                         <div class="item chairman hide">
                             <div class="row">
                                 <div class="col-6 main_div">
-                                    <div class="governing_img"><img src="assets/img/administration/shoeb.webp" loading="lazy"
-                                            alt=""></div>
+                                    <div class="governing_img"><img src="assets/img/administration/shoeb.webp"
+                                            loading="lazy" alt=""></div>
                                     <h4 class="text-dark text-center pt-4 mb-1 font-bold">সোয়েব ভুঁইয়া</h4>
                                     <span class="designation_admin">চেয়ারম্যান ও প্রতিষ্ঠাতা পরিচালক</span>
                                     <p>
-                                        {{substr(str_replace("<br>", "", json_decode($site_settings->site_administration)->chairman->message ),0,400 )}} <a href="/chairman-message">আরও পড়ুন...</a>
+                                        {{ substr(str_replace('<br>', '', json_decode($site_settings->site_administration)->chairman->message), 0, 400) }}
+                                        <a href="/chairman-message">আরও পড়ুন...</a>
                                     </p>
 
                                 </div>
                                 <div class="col-6 main_div">
-                                    <div class="governing_img"><img src="assets/img/administration/sadi.webp" loading="lazy"
-                                            alt=""></div>
+                                    <div class="governing_img"><img src="assets/img/administration/sadi.webp"
+                                            loading="lazy" alt=""></div>
                                     <h4 class="text-dark text-center pt-4 mb-1 font-bold">মোঃ সাইদুল ইসলাম
                                         সাদি</h4>
                                     <span class="designation_admin">সভাপতি ও প্রতিষ্ঠাতা পরিচালক</span>
                                     <p>
-                                        {{substr(str_replace("<br>", "", json_decode($site_settings->site_administration)->governing_body[0]->message ),0,400 )}} <a href="/governing-body">আরও পড়ুন...</a>
+                                        {{ substr(str_replace('<br>', '', json_decode($site_settings->site_administration)->governing_body[0]->message), 0, 400) }}
+                                        <a href="/governing-body">আরও পড়ুন...</a>
                                     </p>
                                 </div>
                             </div>
@@ -293,13 +308,16 @@
     <div class="campus-section-six">
         <div class="row">
             <div class="col-xl-6 col-lg-12 p-0">
-                <div class="campus-picture"><img style="background-attachment: fixed" src="assets/img/events/college_life.webp" loading="lazy"
-                        alt="campus-picture"></div>
+                <div class="campus-picture"><img style="background-attachment: fixed"
+                        src="assets/img/events/college_life.webp" loading="lazy" alt="campus-picture"></div>
             </div>
             <div class="col-xl-6 p-0">
                 <div class="contents p-5">
                     <h1 class="campus-title">প্রতিষ্ঠানের সুযোগ-সুবিধা</h1>
-                    <p>এই কলেজে রয়েছে শীতাতপ নিয়ন্ত্রিত ক্লাসরুম, ডিজিটাল বোর্ড, বিজ্ঞান চর্চার জন্য আধুনিক ল্যাবরেটরি, প্রযুক্তিগত দক্ষতা অর্জনের জন্য রয়েছে কম্পিউটার ল্যাব, পড়ার জন্য লাইব্রেরীতে রয়েছে সময়োপযোগী পাঠ্যপুস্তক। প্রত্যেক শিক্ষার্থীদের কলেজে ব্যবহৃত সরঞ্জামাদি রাখার জন্য রয়েছে পৃথক লকারের ব্যবস্থা। </p>
+                    <p>এই কলেজে রয়েছে শীতাতপ নিয়ন্ত্রিত ক্লাসরুম, ডিজিটাল বোর্ড, বিজ্ঞান চর্চার জন্য আধুনিক ল্যাবরেটরি,
+                        প্রযুক্তিগত দক্ষতা অর্জনের জন্য রয়েছে কম্পিউটার ল্যাব, পড়ার জন্য লাইব্রেরীতে রয়েছে সময়োপযোগী
+                        পাঠ্যপুস্তক। প্রত্যেক শিক্ষার্থীদের কলেজে ব্যবহৃত সরঞ্জামাদি রাখার জন্য রয়েছে পৃথক লকারের ব্যবস্থা।
+                    </p>
                     <div class="campus-dropdown">
                         <div class="campus-dropdown-item">
                             <div class="showed d-flex align-items-center">
@@ -316,7 +334,8 @@
                                 <div class="title">ডিজিটাল বোর্ড</div>
                             </div>
                             <div class="hidden-content">
-                                <p>ক্লাসরুমে রয়েছে ডিজিটাল বোর্ড যাতে প্রয়োজনীয় এ্যানিমেশন এর মাধ্যমে শিক্ষার্থীরা পাঠ ভালো করে বুঝতে পারে।</p>
+                                <p>ক্লাসরুমে রয়েছে ডিজিটাল বোর্ড যাতে প্রয়োজনীয় এ্যানিমেশন এর মাধ্যমে শিক্ষার্থীরা পাঠ ভালো
+                                    করে বুঝতে পারে।</p>
                             </div>
                         </div>
                         <div class="campus-dropdown-item">
@@ -325,7 +344,8 @@
                                 <div class="title">শিক্ষার্থীদের পৃথক লকারের ব্যবস্থা</div>
                             </div>
                             <div class="hidden-content">
-                                <p>ছেলে-মেয়ে আলাদা আলাদা শ্রেণী কক্ষের পাশাপাশি রয়েছে পার্সোনাল জিনিস রাখার জন্য রয়েছে লকারের ব্যবস্থা।</p>
+                                <p>ছেলে-মেয়ে আলাদা আলাদা শ্রেণী কক্ষের পাশাপাশি রয়েছে পার্সোনাল জিনিস রাখার জন্য রয়েছে
+                                    লকারের ব্যবস্থা।</p>
                             </div>
                         </div>
                     </div>
@@ -343,14 +363,20 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/bncc.webp" alt="gallary-image" loading="lazy" />
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/quran_club.webp" alt="gallary-image" loading="lazy" />
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/rover_scout.webp" alt="gallary-image" loading="lazy" />
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/science_club.webp" alt="gallary-image" loading="lazy" />
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/red_crescent.webp" alt="gallary-image" loading="lazy" />
-            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/computer_club.webp" alt="gallary-image" loading="lazy" />   
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/bncc.webp" alt="gallary-image"
+                loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/quran_club.webp" alt="gallary-image"
+                loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/rover_scout.webp" alt="gallary-image"
+                loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/science_club.webp" alt="gallary-image"
+                loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/red_crescent.webp" alt="gallary-image"
+                loading="lazy" />
+            <img class="col-md-2 col-lg-2 col-sm-12" src="assets/img/clubs/computer_club.webp" alt="gallary-image"
+                loading="lazy" />
         </div>
-       
+
     </div>
     <!--================= Gallary Section End Here ================= -->
     <!--================= Events Section Start Here =================-->
