@@ -53,16 +53,21 @@ Route::get('/app/clear', function(){
     return "App Cleared";
 });
 
+Route::get('/storage/link', function(){
+   Artisan::call('storage:link'); 
+   return "Public Storage Linked Successfully";
+});
+
 Route::get('/run/worker', function(){
     Artisan::call('queue:work');
     return "Worker Started";
 });
 
 Route::get('/app/optimize', function(){
-    // Artisan::call('optimize');
-    Artisan::call('route:cache');
-    Artisan::call('view:cache');
-    Artisan::call('config:cache');
-    Artisan::call('cache:cache');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('optimize');
     return "App Optimized";
 });

@@ -24,9 +24,9 @@ export default defineConfig({
         }),
         vue(),
         purge({
-            templates: ['blade'],
+            templates: ['blade', 'vue'],
             paths: ['resources/views/*', 'resources/js/*'],
-            safelist: []
+            safelist: {greedy: [/react-inner-menus$/]}
         })
     ],
 });

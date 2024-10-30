@@ -18,7 +18,7 @@
                     <div class="tab-pane fade show active" id="Profile" role="tabpanel">
                         <div class="m-auto w-100 text-center">
                             <img style="width: 150px; padding-bottom: 25px;"
-                                src="{{ asset('storage/' . json_decode($user->student_files)->student_photo) }}">
+                                src="{{ asset('storage' . json_decode($user->student_files)->student_photo) }}">
                         </div>
                         <table class="table table-striped">
                             <tr>

@@ -14,9 +14,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.jpg">
     <link rel="stylesheet" type="text/css" href="/assets/css/menus.css">
     <link rel="stylesheet" type="text/css" href="/assets/fonts/elegant-icon.css">
+    @stack('inertiaHead')
     @vite(['public/assets/css/bootstrap.min.css', 'public/assets/css/swiper.min.css', 'public/assets/css/all.min.css', 'public/style.css', 'public/assets/css/responsive.css'])
 
-    @stack('inertiaHead')
 </head>
 
 <body>
@@ -49,9 +49,9 @@
         <!--================= Scroll to Top End =================-->
     </div>
 
+    @stack('inertiaTail')
     @include('components.scripts')
 
-    @stack('inertiaTail')
 </body>
 
 </html>
